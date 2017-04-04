@@ -33,7 +33,7 @@ function caps(palavras) {
 ## Exercício 4 - Equilibrio de parênteses
 ``` javascript
 function validaParenteses(parenteses) {
-  var arrayParenteses = validaParenteses.split(""); // reduce só funciona com arrays
+  var arrayParenteses = parenteses.split(""); // reduce só funciona com arrays
   /**
    * Vamos utilizar números para essa solução. Para cada parêntese esquerdo, vamos
    * somar 1 e para cada parêntese direito vamos subtrair um
@@ -87,7 +87,7 @@ function buscar(propriedade, valor, lista) {
 ``` javascript
 function calculaAreaTotal(dimensoes) {
   return dimensoes.reduce(function(anterior, valor) {
-    return anterior + (valor.altura * valor.comprimento);    
+    return anterior + (valor.altura * valor.comprimento);
   }, 0);
 }
 ```
