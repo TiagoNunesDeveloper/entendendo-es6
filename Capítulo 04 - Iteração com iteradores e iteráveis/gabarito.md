@@ -42,11 +42,11 @@ function criaIterador(array) {
 
     return {
        next: function() {
-           if(proximoIndice < array.length) {
-             return { value: array[proximoIndice++], done: false };
-           } else {
-             return { value: undefined, done: true };
-           }
+          if(proximoIndice < array.length) {
+            return { value: array[proximoIndice++], done: false };
+          } else {
+            return { value: undefined, done: true };
+          }
        }
     };
 
